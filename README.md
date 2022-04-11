@@ -33,6 +33,9 @@
                 return IsDiscount ? "Strikethrough" : "None";
             }
         }
-        
+
+Тестирование
+![image](https://user-images.githubusercontent.com/52165649/162692770-4988b1f9-0570-490b-90f0-10331ab6866c.png)
+
  ВОПРОСЫ
  ПОСМОТРЕТЬ АВТОРИЗАЦИЮ
