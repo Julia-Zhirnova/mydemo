@@ -33,3 +33,6 @@
                 return IsDiscount ? "Strikethrough" : "None";
             }
         }
+        
+ ВОПРОСЫ
+ ПОСМОТРЕТЬ АВТОРИЗАЦИЮ
