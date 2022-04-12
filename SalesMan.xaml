@@ -1,0 +1,35 @@
+﻿<Window x:Class="DuckShop.SalesMan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckShop"
+        mc:Ignorable="d"
+        Title="SalesMan" MinHeight="250" MinWidth="600" MaxHeight="1000" MaxWidth="1000">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Resources/logo.png" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <TextBlock Text="SALESMAN" HorizontalAlignment="Left" VerticalAlignment="Center"
+                   FontSize="10" Margin="35,0,0,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Grid Background="#FEFFB7" Panel.ZIndex="-2"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+ 
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <TextBlock Text="SEARCH" Width="175" TextAlignment="Right"></TextBlock>
+            <TextBox Width="225" Name="TBoxSearch" TextChanged="TBoxSearch_TextChanged" Margin="5,0,0,0"></TextBox>
+        </StackPanel>
+        <ComboBox Name="ComboCategory" Width="225" SelectionChanged="ComboCategory_SelectionChanged" DisplayMemberPath="Category"  Grid.Row="1" Grid.Column="2"></ComboBox>
+        <Button Content="PAY" Click="Btn_PAY" Margin="0,20,0,0" Grid.Row="3" Grid.Column="2"/>
+
+    </Grid>
+</Window>
