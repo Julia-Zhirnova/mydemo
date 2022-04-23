@@ -1,4 +1,4 @@
-# mydemo
+# mydemo https://github.com/AnnaKarabasa/WpfAppTrueSkills_Recipes.git
 Полезно:
 - плитка 
 ``` <ListView.ItemsPanel>
