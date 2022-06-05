@@ -31,7 +31,7 @@ namespace AutoserviceDoeduSam.Pages
         {
             if (TBox_Code.Text == String.Empty)//Проверка на пустоту текстбокса
                 MessageBox.Show("Введите код");
-            if (TBox_Code.Text == "0000")
+            if (TBox_Code.Text == "Ivanov@namecomp.ru")
                 Class.Manager.MainFrame.Navigate(new Pages.Admin());
             else Class.Manager.MainFrame.Navigate(new Pages.ServicePage());
         }
